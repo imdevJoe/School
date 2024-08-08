@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    
+    <link href="style.css" rel="stylesheet" >    
+    <title>School Website</title>
+</head>
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg bg-warning navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/crestresized.png" alt="Avatar Logo" width="" height=""> 
+                  </a>
+
+
+                  <button class="navbar-toggler"
+                   type="button"
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+
+                  </button>
+                  <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active" aria-current="page" >HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link" >ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">CONTACT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="facilties.html" class="nav-link">FACILITIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="radio.html" class="nav-link">RADIO</a>
+                        </li>
+                    </ul>
+                  </div>
+            </div>
+    </nav>
+
+    <!-- Carousel slide show -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        
+        <div class="carousel-inner carousel-fade">
+          <div class="carousel-item active">
+            <img src="images/funnyteeth.jpg" class=" d-block w-100" alt="iphone">
+            <!-- To center the captions add these to the class: d-flex flex-column h-100 align-items-center justify-content-center-->
+            <div class="carousel-caption d-md-block custom-captions">
+              <h1> Our incredible Staff Have your kids at heart</h1>
+              <p>Some representative placeholder content for the first slide.
+                <button class="btn btn-warning btn-lg float-end" type="button" id="View-Events">
+                  ENROLL NOW
+                </button>
+              </p>
+              
+            </div>
+          </div>
+          <div class="carousel-item carousel-fade">
+            <img src="images/kidsBehind_laptop.jpg" class="d-block w-100" id="carousel-image" alt="google pixel">
+            <div class="carousel-caption  d-md-block custom-captions">
+              <h1>Practical ICT lessons for  student</h1>
+              <p>Some representative placeholder content for the second slide.
+                <button class="btn btn-warning btn-lg float-end" type="button" id="View-Events">
+                  VIEW MORE
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-fade">
+            <img src="images/shirtDesign.jpg" class="d-block w-100" alt="samsung">
+            <div class="carousel-caption  d-md-block custom-captions">
+              <h1>ARTWORKS BY STUDENT</h1>
+              <p>Students taking part in art works and creative art activities Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, sunt officia nihil asperiores quidem eligendi!
+                <button class="btn btn-warning btn-lg float-end" type="button" id="View-Events">
+                  VIEW GALLERY
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+       <!-- Container where carousel caption is kept and displayed on small screens -->
+        <div class=" p-4  rounded" id="caption-container">
+          
+        </div>
+
+
+      <!-- OR We can use this header (SHOWCASE) with image in place of the carousel
+       <section class="bg-danger text-light text-align p-2 text-center">
+        <div class="container">
+          <div class="d-md-flex align-items-center">
+            <div>
+              <h1 class="me-5">Buy Affordable phones with ease!</h1>
+              <p class="lead me-5 ">
+                Get your latest and trendiest mobile phones with ease.
+                Just sit in your comfort zone, browse through our web for the best deals.
+                Can't find your desired phone ?
+              </p>
+              <button class="btn btn-primary btn-lg md-sm-2">
+                Instant Chat here
+              </button>
+            </div>
+            <img class="fluid w-50"  src="images/banner-online.jpg" alt="banner"/>
+          </div>
+        </div>
+       </section> -->
+
+       <!-- Creating a Search bar -->
+         <!-- <section class="bg-primary text-light p-3">
+          <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+              <h3 class="mb-3 mb-md-0">Search Activities</h3>
+
+              <div class="input-group search-box">
+                <input type="text" class="form-control" placeholder="Phone Search"/>
+                <button class="btn btn-dark btn-lg" type="button" id="button-addon2">
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+         </section> -->
+
+
+         <!-- Grid -->
+          <div class="contentAreaWhite">
+            <div class="container mb-5 px-0 grid-container">
+
+              <!-- Header -->
+            <h4 class="custom-header">U P C O M I N G &nbsp; E V E N T S</h4>
+    
+              <!-- Row 1 -->
+              <div class="row px-3">
+                 <!-- Card 1 -->
+              <div class="col-lg-3 col-md-6 col-12 my-4 custom-grid-tem">
+                <div class="card event-card">
+                  <img src="images/stem.jpg" class="card-img-top img-fluid" alt="Event 1">
+                  <div class="card-img-overlay"><span class="badge bg-warning px-2 "><h4>05</h4> Aug 2024</span>  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">STEM ORIENTATION</h5>
+                  </div>
+                  <!-- To make the card clickable -->
+                  <a href="#" class="stretched-link"></a>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-lg-3 col-md-6 col-12 my-4 custom-grid-tem">
+                <div class="card event-card">
+                  
+                  <img src="images/microscope.jpg" class="card-img-top" alt="Event 2">
+                  <div class="card-img-overlay"><span class="badge bg-warning px-2 "><h4> 21</h4> Aug 2024</span>  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">LAB UNVEILING</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-lg-3 col-md-6 col-12 my-4 custom-grid-tem">
+                <div class="card event-card">
+                  
+                  <img src="images/shirtDesign.jpg" class="card-img-top" alt="Event 3">
+                  <div class="card-img-overlay"><span class="badge bg-warning px-2 "><h4>01</h4> Sep 2024</span>  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">ART DISPLAY</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="col-lg-3 col-md-6 col-12 my-4 custom-grid-tem">
+                <div class="card event-card">                  
+                  <img src="images/daycare.jpg" class="card-img-top img-fluid" alt="Event 4">
+                  <div class="card-img-overlay"><span class="badge bg-warning px-2 "><h4>05</h4> Aug 2024</span>  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">DAY CARE</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Row for button -->
+               <div class="row px-3">
+                <div class="col col-12 mb-5 custom-grid-item">
+                  <a href="#" class="btn btn-lg float-end" type="button" id="button-id">VIEW EVENTS</a>
+                  <!-- <button class="btn btn-primary btn-lg float-end" type="button" id="View-Events">
+                    View Events
+                  </button> -->
+                </div>
+               </div>              
+              
+               
+                
+                 <!-- Row for card 5&6 -->    
+                <div class="row px-1 py-2">
+                  <!-- Card 5 -->
+                  <div class="col-lg-6 px-4 ">
+                    <!-- Creating a grid for 3 by 3 images -->
+                  <div class="container mt-5 px-0 grid-container">
+                    <h4 class="custom-header">O U R &nbsp; S T U D E N T S</h4>      
+                    <div class="row px-3">
+                      <div class="col-4 px-0">
+                        <div class="card">                  
+                          <img src="images/bumbleArt.jpg" id="grid-images" class="card-img" onclick="openModal(this)" alt="Event 3"> 
+                      </div>
+                      </div>
+                      <div class="col-4 px-0">
+                        <div class="card">                  
+                          <img src="images/kidsBehind_laptop.jpg" class="card-img" onclick="openModal(this)" id="grid-images" alt="Event 3"> 
+                      </div> 
+                      </div>
+                      <div class="col-4 px-0">
+                        <div class="card">                  
+                          <img src="images/bumbleBee_stem.jpg" id="grid-images"  class="card-img" onclick="openModal(this)" alt="Event 3"> 
+                      </div> 
+                      </div>
+                    </div>
+                    <!-- second 3 -->
+                    <div class="row px-3">
+                      <div class="col-4 px-0">
+                        <div class="card">                  
+                          <img src="images/bumbleBee_ictLab.jpg" id="grid-images" alt="Event 3" class="card-img" onclick="openModal(this)"> 
+                      </div>
+                      </div>
+                      <div class="col-4 px-0">
+                        <div class="card">                  
+                          <img src="images/car_asemblage.jpg" id="grid-images"  class="card-img" onclick="openModal(this)" alt="Event 3"> 
+                      </div> 
+                      </div>
+                      <div class="col-4 px-0">
+                        <div class="card">                  
+                          <img src="images/fun_stem.jpg" id="grid-images" class="card-img" onclick="openModal(this)" alt="Event 3"> 
+                      </div> 
+                      </div>
+                    </div>
+                    <!-- 3rd three -->
+                    <div class="row px-3">
+                      <div class="col-4 mb-4 px-0">
+                        <div class="card">                  
+                          <img src="images/daycare.jpg" id="grid-images" class="card-img" onclick="openModal(this)" alt="Event 3"> 
+                      </div>
+                      </div>
+                      <div class="col-4 mb-4 px-0">
+                        <div class="card">                  
+                          <img src="images/fun_stem.jpg" id="grid-images" class="card-img" onclick="openModal(this)" alt="Event 3"> 
+                      </div>
+                      </div>
+                      <div class="col-4 mb-4 px-0">
+                        <div class="card">                  
+                          <img src="images/funnyteeth.jpg"  class="card-img" onclick="openModal(this)" id="grid-images" alt="Event 3"> 
+                      </div> 
+                      </div>
+                    </div>
+                     <!-- Row for button -->
+               <div class="row px-3">
+                <div class="col col-12 mb-5 custom-grid-item">
+                  <div class="button-container">
+                  <a href="https://m.facebook.com/100058473412945/" class="btn btn-lg float-end" type="button" id="button-id">F A C E B O O K</a>
+                  <!-- <button class="btn btn-primary btn-lg float-end" type="button" id="View-Events">
+                    F A C E B O O K
+                  </button> -->
+                </div>
+                </div>
+               </div>   
+                   </div>
+                  </div>
+                  <!-- Modal -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+                  
+                
+              <!-- Card 6 -->
+              <div class="col-lg-6">
+                <div class="container mt-5  px-0 grid-container">
+                  <h4 class="custom-header mb-0">N E W S &nbsp; R O O M</h4>
+                  <div class="col">
+                    <ul class="list-group px-2 list-group-flush">
+                      <li class="list-group-item">
+                        <h4 class="mb-0 text-primary">PTA MEETING</h4>
+                        <P class="text-muted mb-0">&#9201; August 25, 2024</P>
+                      </li>
+                      <li class="list-group-item">
+                        <h4 class="mb-0 text-primary">END OF TERM PARTY</h4>
+                        <P class="text-muted mb-0">&#9201; August 6, 2024</P>
+                      </li>
+                      <li class="list-group-item">
+                        <h4 class="mb-0 text-primary">15th ANNIVERSARY</h4>
+                        <P class="text-muted mb-0">&#9201; july 23, 2024</P>
+                      </li>
+                      <li class="list-group-item mb-2">
+                        <h4 class="mb-0 text-primary">LIVE RADIO</h4>
+                        <P class="text-muted mb-0">&#9201; every friday 3pm</P>
+                      </li>
+                    </ul>
+                  </div>
+                   <!-- Row for button -->
+               <div class="row px-3">
+                <div class="col col-12 mb-5 custom-grid-item">
+                  <a href="https://m.facebook.com/100058473412945/" class="btn btn-lg float-end" type="button" id="button-id">MORE NEWS</a>
+                  <!-- <button class="btn btn-primary btn-lg float-end" type="button" id="View-Events">
+                    MORE NEWS
+                  </button> -->
+                </div>
+               </div>    
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          </div>
+
+          
+
+          <!-- Contact Us forms -->
+         <!-- Contact Us forms -->
+<section>
+  <div class="container-fluid contact-us">
+    <div class="container-fluid mb-4 p-5">
+      <h4 class="text-center">C O N T A C T &nbsp; U S</h4>
+
+      <form id="contact-form" action="send_email.php" method="POST">
+        <div class="form-floating mb-3 mt-4">
+          <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+          <label for="name">Name</label>
+        </div>
+
+        <div class="form-floating mb-3 mt-4">
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+          <label for="email">Email</label>
+        </div>
+
+        <div class="form-floating mt-4 mb-3">
+          <input type="text" class="form-control" id="phone" placeholder="Enter phone" name="phone">
+          <label for="phone">Phone</label>
+        </div>
+
+        <div class="form-floating mt-4">
+          <select class="form-select" id="reason" name="reason" required>
+            <option value="">Select Reason</option>
+            <option value="Student">Student</option>
+            <option value="Staff">Staff</option>
+            <option value="Facility">Facility</option>
+            <option value="Other">Other</option>
+          </select>
+          <label for="reason" class="form-label">Select Reason:</label>
+        </div>
+
+        <div class="form-floating mt-4">
+          <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here" required></textarea>
+          <label for="comment">Comments</label>
+        </div>
+
+        <div class="pb-4 mt-4">
+          <button class="btn btn-lg float-end" type="submit">S U B M I T</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+           <!-- this form works with the javascript to send the form through whatsapp -->
+<!-- <section>
+  <div class="container-fluid contact-us">
+    <div class="container-fluid mb-4 p-5">
+      <h4 class="text-center">C O N T A C T &nbsp; U S</h4>
+
+      <div class="form-floating mb-3 mt-4">
+        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+        <label for="name">Name</label>
+      </div>
+
+      <div class="form-floating mb-3 mt-4">
+        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+        <label for="email">Email</label>
+      </div>
+
+      <div class="form-floating mt-4 mb-3">
+        <input type="text" class="form-control" id="phone" placeholder="Enter phone" name="phone">
+        <label for="phone">Phone</label>
+      </div>
+
+      <div class="form-floating mt-4">
+        <select class="form-select" id="reason" name="reason">
+          <option>Student</option>
+          <option>Staff</option>
+          <option>Facility</option>
+          <option>Other</option>
+        </select>
+        <label for="reason" class="form-label">Select Reason:</label>
+      </div>
+
+      <div class="form-floating mt-4">
+        <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+        <label for="comment">Comments</label>
+      </div>
+
+      <div class="pb-4 mt-4">
+
+        <button class="btn btn-lg float-end" type="button" id="submit-button">S U B M I T</button>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+           <!-- OVerlaying some texts above image -->
+           <section>
+            <div class="card text-white" >
+              <div class="container-image">
+              <img src="images/bumbleBee_stem.jpg" class="card-img" alt="stem-student">
+              <div class="card-img-overlay" style="  background-color: rgba(245, 154, 101, 0.8);">
+                <!-- lots of style added here to center the div -->
+                <div class="color-overlay  d-flex justify-content-center align-items-center">
+                  
+              <p>
+                Here at Bumble Bee Academy one of our majors is STEM.Our students  from the basic level through to Senior level partake in stem activities geered towards solving problem of the community
+                We also have live radio streaming which is facilitated by students.Want to watch our kids broadcast live ?
+                <button class="btn btn-warning btn-lg " type="button" id="View-Events">
+                  CLICK HERE
+                </button>
+              </p>
+                </div>
+              
+            </div>
+            </div>
+          </div>
+           </section>
+
+
+          <!-- SECTION BEFORE FOOTER -->
+<section class="before-footer">
+  <div class="container">
+    <div class="row">
+      <!-- Column 1 with Social Media Links -->
+      <div class="col-lg-4">
+        <div class="line-container">
+          <div class="line"></div> <!-- Orange-red line -->
+          <div class="content">
+            <img src="images/crestresized.png" alt="Event 4">
+            <!-- flex box for social media links -->
+            <div class="d-flex pt-3 text-white">
+              <div class="px-2 mb-5 mx-1">
+                <div class="button">
+                  <p>
+                    <a href="facebook.com"  class="icon-link" ><i class="bi bi-facebook"></i></a>
+                  </p>
+                </div>
+              </div>
+              <!-- Add other social media links here... -->
+              <div class="px-2 mb-5 mx-1">
+                <div class="button">
+                  <p>
+                    <a href="twitter.com"  class="icon-link" ><i class="bi bi-twitter"></i></a>
+                  </p>
+                </div>
+              </div>
+              <!-- icon link instagram -->
+              <div class="px-2 mb-5 mx-1">
+                <div class="button">
+                  <a href="instagram.com"  class="icon-link" ><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <!-- icon link for whatsapp -->
+              <div class="px-2 mb-5 mx-1">
+                <div class="button">
+                  <p> <a href="http://whatsapp.com"  class="icon-link" >
+                  
+                    <i class="bi bi-whatsapp"></i>
+                  </a> </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  
+
+      <!-- Column 2 with Contact Us -->
+      <div class="col-lg-4">
+        <div class="line-container">
+          <div class="content">
+            <h4 style="font-weight: bolder;">CONTACT US</h4>
+            <div class="line"></div> <!-- Orange-red line -->
+
+            <p>
+              Near Agona Taxi Station<br />
+              Mpobena, Elmina
+            </p>
+            <p>Phone: (+233) 247-700-843</p>
+            <p>bumblebeeacademygh@gmail.com</p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3 with Quick Links -->
+      <div class="col-lg-4">
+        <div class="line-container">
+          <div class="content">
+            <h4 style="font-weight: bolder;">QUICK LINKS</h4>
+            <div class="line"></div> <!-- Orange-red line -->
+
+            <p><a href="#">About</a></p>
+            <p><a href="#">Enroll Now</a></p>
+            <p><a href="#">Facilities</a></p>
+            <p><a href="#">Achievements</a></p>
+            <p><a href="#">Live Radio</a></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+            <footer>
+              <div class="box ">Copyright All Right Reserved 2024, Bumble Bee Academy</div>
+             </footer>
+         
+
+     <!-- <p class="note">Important note:</p> -->
+
+
+     
+     
+
+
+      
+     <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const captionContainer = document.getElementById('caption-container');
+      
+        function updateCaptions() {
+          // Clear previous caption content
+          captionContainer.innerHTML = '';
+      
+          // Find the active carousel item
+          const activeItem = document.querySelector('.carousel-item.active .carousel-caption');
+          if (activeItem) {
+            // Clone the caption content and add it to the new container
+            captionContainer.innerHTML = activeItem.innerHTML;
+          }
+        }
+      
+        // Run on page load
+        updateCaptions();
+      
+        // Listen for slide changes
+        const carouselElement = document.getElementById('carouselExampleCaptions');
+        carouselElement.addEventListener('slid.bs.carousel', updateCaptions);
+      
+        // Run on window resize to handle screen size changes
+        window.addEventListener('resize', function() {
+          if (window.innerWidth <= 767.98) {
+            updateCaptions();
+          } else {
+            captionContainer.innerHTML = ''; // Clear container on larger screens
+          }
+        });
+      });
+      
+      
+     </script>
+     <!-- Script for card image click -->
+     <script>
+      function openModal(img) {
+          var modal = document.getElementById("imageModal");
+          var modalImg = document.getElementById("modalImg");
+          var captionText = document.getElementById("caption");
+  
+          modal.style.display = "block";
+          modalImg.src = img.src;
+          captionText.innerHTML = img.alt;
+      }
+  
+      function closeModal() {
+          var modal = document.getElementById("imageModal");
+          modal.style.display = "none";
+      }
+  </script>
+
+  <!-- java script to submit form to whatsapp -->
+   <script>
+    document.getElementById('submit-button').addEventListener('click', function() {
+      // Prevent form submission
+      event.preventDefault();
+    
+      // Extract form data
+      var name = encodeURIComponent(document.getElementById('name').value);
+      var email = encodeURIComponent(document.getElementById('email').value);
+      var phone = encodeURIComponent(document.getElementById('phone').value);
+      var reason = encodeURIComponent(document.getElementById('reason').value);
+      var comment = encodeURIComponent(document.getElementById('comment').value);
+    
+      // WhatsApp phone number (replace with your number)
+      var phoneNumber = '+233248522832'; // Replace with your phone number
+    
+      // Create the WhatsApp message URL
+      var whatsappURL = `https://wa.me/${phoneNumber}?text=Name:%20${name}%0AEmail:%20${email}%0APhone:%20${phone}%0AReason:%20${reason}%0AComment:%20${comment}`;
+    
+      // Redirect to WhatsApp
+      window.location.href = whatsappURL;
+    });
+    
+   </script>
+     
+<!-- Bootstrap javascript cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
